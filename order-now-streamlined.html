@@ -1604,8 +1604,8 @@
       var origPhoto = null, cutPhoto = null, bgMode = 'keep', busy = false;
       var designs = [], activeSlot = 1, currentFile = null;
       window.__mbcBg = 'keep';
-      var baseRound = new Image(); baseRound.src = ROUND_SRC;
-      var baseSquare = new Image(); baseSquare.src = SQUARE_SRC;
+      var baseRound = new Image(); baseRound.crossOrigin = 'anonymous'; baseRound.src = ROUND_SRC;
+      var baseSquare = new Image(); baseSquare.crossOrigin = 'anonymous'; baseSquare.src = SQUARE_SRC;
       var photo = null;
 
       function neededDesigns() {
